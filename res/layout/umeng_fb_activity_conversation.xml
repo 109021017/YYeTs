@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".ConversationActivity" >
+
+    <ListView
+        android:id="@+id/umeng_fb_reply_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="none"
+        android:divider="@null"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:clipToPadding="false"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#999999"/>
+    <RelativeLayout
+        android:id="@+id/umeng_fb_reply_content_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/umeng_fb_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/highlight_overlay_light"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/umeng_fb_reply_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:textColor="#ffffff"
+            android:src="@drawable/ic_send_dark_normal" />
+
+        <EditText
+            android:id="@+id/umeng_fb_reply_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/umeng_fb_send"
+            android:background="#ffffff"
+            android:hint="@string/feedback_your_advice_hite"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" />
+    </RelativeLayout>
+
+</LinearLayout>

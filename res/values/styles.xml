@@ -1,0 +1,82 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme.Dialog" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/dialog_full_holo_light</item>
+        <item name="android:maxWidth">600dp</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.Yyets">
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="SideDrawerSecondaryText">
+        <item name="android:textSize">@dimen/side_drawer_secondary_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/play_fg_side_drawer_secondary</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/side_drawer_item_left_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/side_drawer_item_secondary_min_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">8.0dip</item>
+    </style>
+
+    <style name="SideDrawerRegularText">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">@color/play_fg_primary</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/side_drawer_item_left_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/side_drawer_item_primary_min_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="FeedbackMessageText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="FeedbackTimeSince">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#66000000</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EmptyText">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">#aaa</item>
+    </style>
+
+    <style name="Theme.Yyets.Transparent.NoActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

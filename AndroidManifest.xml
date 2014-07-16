@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.willme.yyets"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name=".YYeTsApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.willme.yyets.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.willme.yyets.SettingsActivty"></activity>
+        <activity android:name="com.willme.yyets.LoginActivity"
+            android:theme="@style/Theme.Yyets.Transparent.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        
+        <service android:name="com.willme.yyets.push.NotificationService"/>
+        <receiver android:name="com.willme.yyets.push.BootupReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        
+        <activity android:name="com.willme.yyets.FeedbackActivity"/>
+        <activity android:name="com.umeng.fb.ContactActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <meta-data android:value="5368c3c056240b679203209d" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="Developer" android:name="UMENG_CHANNEL"/>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg_play">
+    <ImageView 
+        android:id="@+id/iv_cover"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_poster_default_small"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="4dp"
+	    android:padding="4dp">
+	    <TextView 
+	        android:id="@+id/tv_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+		    android:textSize="16sp"
+	        android:text="How I Met Your Mother"/>
+	    <TextView 
+	        android:id="@+id/tv_desc"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:textColor="#b6b6b6"
+	        android:layout_marginTop="2dp"
+	        android:textSize="13sp"
+	        android:text="[人人影视原创翻译双语字幕][更新S04E04精校]"/>
+		<TextView 
+		    android:id="@+id/tv_time"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_marginTop="4dp"
+	        android:textColor="#4b8bb4"
+	        android:gravity="right"
+		    android:text="两小时前"/>
+	</LinearLayout>
+</LinearLayout>

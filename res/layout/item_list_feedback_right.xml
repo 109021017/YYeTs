@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_default_avatar"
+        android:layout_alignBottom="@+id/msg_frame"
+        android:layout_marginBottom="@dimen/msg_bubble_bottom_shadow_width"/>
+
+    <LinearLayout
+        android:id="@+id/msg_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/msg_bubble_arrow_width"
+        android:layout_toLeftOf="@+id/iv_avatar"
+        android:background="@drawable/selector_msg_bubble_right"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/msg_bubble_min_height"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/umeng_fb_reply_content"
+            style="@style/FeedbackMessageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:importantForAccessibility="no"
+            android:maxWidth="400.0dip"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:text="@string/umeng_fb_reply_content_default" />
+
+        <TextView
+            android:id="@+id/umeng_fb_reply_date"
+            style="@style/FeedbackTimeSince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="0dp"
+            android:importantForAccessibility="no"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:text="@string/umeng_fb_reply_date_default" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">人人影视</string>
+    <string name="action_settings">设置</string>
+    
+    <string name="account">用户名</string>
+    <string name="password">密码</string>
+    <string name="sign_in">登录</string>
+    <string name="signing_in">登录中&#8230;</string>
+    <string name="username_empty_error">用户名不能为空.</string>
+    <string name="password_empty_error">密码不能为空.</string>
+    
+	<string name="notificaiton_text_one">更新了.</string>     
+	<string name="notificaiton_text_muti">%d部剧更新了.</string>
+	<string name="notificaiton_title_daily">今日更新</string>
+	<string name="notificaiton_names_and"> 和 </string> 
+	<string name="notificaiton_ticker">%s 更新了.</string>
+	
+	<string name="update_time_mins_ago">%d分钟前</string>
+	<string name="update_time_hours_ago">%d小时前</string>
+	<string name="update_time_today">今天kk:mm</string>
+	<string name="update_time_yesterday">昨天kk:mm</string>
+	
+	<string name="date_time_format">M月d日 kk:mm</string>   
+	<string name="feedback_title">意见反馈</string>
+	<string name="feedback_your_advice_hite">你的建议</string>
+	<string name="loading">正在加载</string>
+	<string name="load_error">加载出错</string>
+	
+</resources>

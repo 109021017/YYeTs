@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YYeTs</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="signing_in">Signing in&#8230;</string>
+    <string name="username_empty_error">Username can\'t be empty.</string>
+    <string name="password_empty_error">Password can\'t be empty.</string>
+    
+	<string name="notificaiton_text_one">Updated.</string>     
+	<string name="notificaiton_text_muti">%d shows updated.</string>
+	<string name="notificaiton_title_daily">Daily updates</string>
+	<string name="notificaiton_names_and"> and </string> 
+	<string name="notificaiton_ticker">%s updated.</string> 
+	
+	<string name="date_time_format">MMM d, kk:mm</string>   
+	<string name="feedback_title">Feedback</string>
+	<string name="feedback_your_advice_hite">Your advice</string>
+	<string name="loading">Loading</string>
+	<string name="load_error">Error occurred while loading.</string>
+</resources>

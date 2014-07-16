@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="bg_login_error_info">#55FF0000</color>
+    <color name="window_background">#e5e5e5</color>
+    <color name="bg_drawer">#f7f7f7</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+    
+    <color name="side_drawer_separator">#ffe5e5e5</color>
+    <color name="play_fg_side_drawer_secondary">#ff666666</color>
+    <color name="play_fg_primary">#ff333333</color>
+    
+</resources>
