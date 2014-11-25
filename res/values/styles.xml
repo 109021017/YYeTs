@@ -1,16 +1,4 @@
-<resources>
-
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="AppTheme.Dialog" parent="android:Theme.Light">
         <item name="android:windowNoTitle">true</item>
@@ -21,9 +9,14 @@
         <item name="android:maxWidth">600dp</item>
         <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
     </style>
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="Theme.Yyets">
+
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">#1775ac</item>
+        <item name="android:colorPrimaryDark">#104f75</item>
+        <item name="android:colorAccent">#FFF</item>
         <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:navigationBarColor">#1775ac</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
     <style name="SideDrawerSecondaryText">
@@ -72,7 +65,7 @@
         <item name="android:textColor">#aaa</item>
     </style>
 
-    <style name="Theme.Yyets.Transparent.NoActionBar" parent="@style/Theme.AppCompat.Light">
+    <style name="Theme.Yyets.Transparent.NoActionBar" parent="@style/AppTheme">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>

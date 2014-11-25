@@ -19,7 +19,7 @@ public class MainActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		setTitle("我的收藏");
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.content_frame, new RecentFragment()).commit();
@@ -35,7 +35,7 @@ public class MainActivity extends BaseActivity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-                R.drawable.ic_drawer_white, R.string.app_name, R.string.app_name){
+                R.drawable.ic_ab_drawer_mask, R.string.app_name, R.string.app_name){
         	
         	@Override
         	public void onDrawerClosed(View drawerView) {

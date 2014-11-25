@@ -236,7 +236,6 @@ public class RecentFragment extends BaseFragment implements
 				favResponse = FavoriteRequest.getFavoriteList(mCurPage + 1);
 			} catch (Exception e) {
 				e.printStackTrace();
-				mHasError = true;
 			}
 			if (favResponse != null) {
 				mCurPage = favResponse.getCurrentPage();
@@ -249,6 +248,7 @@ public class RecentFragment extends BaseFragment implements
 				}
 				return list;
 			} else {
+				mHasError = true;
 				return null;
 			}
 		}

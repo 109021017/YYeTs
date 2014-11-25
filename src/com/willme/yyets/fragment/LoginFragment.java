@@ -111,6 +111,7 @@ public class LoginFragment extends BaseFragment {
 								YYeTsApp.UserInfo.setNickname(JsonUtils.getStringFromJson(data, "nickname", null));
 								YYeTsApp.UserInfo.setTinyAvatarUrl(JsonUtils.getStringFromJson(data, "avatar_t", null));
 								getActivity().startService(new Intent(getActivity(), NotificationService.class));
+								getActivity().finish();
 							} catch (JSONException e) {
 								e.printStackTrace();
 							}

@@ -74,8 +74,8 @@ public class YYResource {
 		Calendar calendar = Calendar.getInstance();
 		calendar.add(Calendar.HOUR_OF_DAY, -1);
 		if(updateTime.after(calendar)){
-			long dtTime = updateTime.getTimeInMillis() - calendar.getTimeInMillis();
-			return context.getString(R.string.update_time_mins_ago, dtTime%(1000*60));
+			int dtTime = (int) (System.currentTimeMillis() - updateTime.getTimeInMillis());
+			return context.getString(R.string.update_time_mins_ago, dtTime/(1000*60));
 		}
 		calendar.add(Calendar.HOUR_OF_DAY, 1);
 		calendar.set(Calendar.HOUR_OF_DAY, 0);

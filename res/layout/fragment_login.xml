@@ -6,7 +6,6 @@
     android:background="@drawable/dialog_full_holo_light" >
 	
     <TextView 
-        android:background="@drawable/tab_selected_yyets"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="@string/sign_in"
@@ -36,7 +35,7 @@
             <EditText
                 android:id="@+id/et_account"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/account"
                 android:singleLine="true" >
@@ -47,7 +46,7 @@
             <EditText
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/password"
                 android:imeActionLabel="@string/sign_in"
